@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #31383e;
+    font-family: trebuchet ms;
+}
+
+.container {
+    width: 100vw;
+}
+
+nav {
+    color: white;
+    font-family: trebuchet ms;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly;
+    background-color: #212529;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+nav img {
+    margin-top: 0.25rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 2rem;
+}
+
+.about img {
+    margin-top: 2   rem;
+    width: 15rem;
+    height: 15rem;
+}
+
+.about {
+    border-radius: 2rem;
+    background-color: #212529;
+    color: white;
+    width: 60rem; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+    margin-top: 2.5rem;
+    padding: 2.5rem;
+}
+
+
+.description {
+    margin-left: 2.5rem;
+}
+
+.description h1:hover {
+    color: #b6b6b6;
+    cursor: pointer;
+}
+
+.description h1 {
+    display: flex;
+    justify-content: center;
+    transition: all .2s ease-in-out;
+}
+
+nav h1 {
+    transition: all .2s ease-in-out;
+}
+
+nav h1:hover {
+    cursor: pointer;
+    transform: scale(110%);
+}
+
+nav img {
+    transition: all .2s ease-in-out;
+}
+
+nav img:hover {
+    cursor: pointer;
+    transform: scale(110%);
+}
+
+.about img {
+    border-radius: 2.5rem;
+    transition: all .5s ease-in-out;
+}
+
+.about img:hover {
+    filter: grayscale(100%);
+}
