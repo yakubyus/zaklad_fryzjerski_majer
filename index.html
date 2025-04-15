@@ -5,24 +5,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zakład Fryzjerski Majer</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/images/budynek.png">
 </head>
 <body>
     <div class="container">
-        <nav>
-            <h1>O NAS</h1>
-            <h1>GALERIA</h1>
-            <img src="/images/logo.png">
-            <h1>CENNIK</h1>
-            <h1>KONTAKT</h1>
-        </nav>
-        <div class="about">
-            <div class="image">
-                <img src="/images/budynek.png">
+        <div class="social-sidebar">
+            <div class="social-bar facebook-bar">
+                <a href="https://facebook.com" target="_blank" class="social-link">
+                    <img src="/images/fb.png" alt="Facebook" class="social-icon">
+                    <span class="social-text">Facebook</span>
+                </a>
             </div>
-            <div class="description">
-                <h1>SALON FRYZJERSKI MAJER</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem quae tempore omnis delectus sapiente qui at, veritatis fugiat vero. Aut, libero quia inventore non similique placeat totam eveniet debitis cupiditate, cumque veritatis voluptatibus, voluptates molestiae. Ex quibusdam pariatur quas numquam facilis obcaecati molestias exercitationem animi possimus! Iusto tenetur nam consectetur quo facilis corporis distinctio. Vel, deserunt velit cupiditate sint, corporis blanditiis iure modi exercitationem molestias sunt itaque labore quam nam placeat! Eos tempore saepe eius aliquam quisquam consequatur quas mollitia tempora nisi quidem tenetur illum deserunt inventore dolore, perspiciatis expedita numquam magnam assumenda, fugiat voluptatum rerum? Dolores, commodi. Sed?</p>
+            <div class="social-bar booksy-bar">
+                <a href="https://booksy.com" target="_blank" class="social-link">
+                    <img src="/images/booksy.png" alt="Booksy" class="social-icon">
+                    <span class="social-text">Booksy</span>
+                </a>
+            </div>
         </div>
+        <div class="top" id="top">
+            <nav>
+                <h1><a href="#about">O NAS</a></h1>
+                <h1><a href="#gallery">GALERIA</a></h1>
+                <a href="#top"><img src="/images/logo.png" alt="Logo"></a>
+                <h1><a href="#prices">CENNIK</a></h1>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle color scheme">
+                    <span class="moon">🌙</span>
+                    <span class="sun">☀️</span>
+                </button>
+            </nav>
+            <div class="about" id="about">
+                <div class="image">
+                    <img src="/images/budynek.png" alt="Salon fryzjerski">
+                </div>
+                <div class="description">
+                    <h1>SALON FRYZJERSKI MAJER</h1>
+                    <p>Majer to nowoczesny męski zakład fryzjerski, który łączy tradycję barberską z aktualnymi trendami. Stylowe wnętrze, profesjonalna obsługa i indywidualne podejście sprawiają, że każdy klient czuje się wyjątkowo. Oferujemy strzyżenie, trymowanie brody oraz pielęgnację włosów na najwyższym poziomie. W Majerze stawiamy na precyzję, jakość i dobrą atmosferę. To idealne miejsce dla mężczyzn ceniących klasę i dobry styl. Odwiedź nas i przekonaj się sam – Majer to więcej niż fryzjer.</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery" id="gallery">
+            <h1>GALERIA</h1>
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide">
+                        <img src="/images/fryz1.png" alt="Fryzura 1">
+                    </div>
+                    <div class="slide">
+                        <img src="/images/fryz2.png" alt="Fryzura 2">
+                    </div>
+                    <div class="slide">
+                        <img src="/images/fryz3.png" alt="Fryzura 3">
+                    </div>
+                    <div class="slide">
+                        <img src="/images/fryz4.png" alt="Fryzura 4">
+                    </div>
+                    <div class="slide">
+                        <img src="/images/fryz5.png" alt="Fryzura 5">
+                    </div>
+                    <div class="slide">
+                        <img src="/images/fryz6.png" alt="Fryzura 6">
+                    </div>
+                    <div class="slide">
+                        <img src="/images/fryz7.png" alt="Fryzura 7">
+                    </div>
+                    <div class="slide">
+                        <img src="/images/fryz8.png" alt="Fryzura 8">
+                    </div>
+                </div>
+                <button class="slider-btn" id="prev">&#10094;</button>
+                <button class="slider-btn" id="next">&#10095;</button>
+                <div class="slider-nav">
+                    <div class="slider-dot active"></div>
+                    <div class="slider-dot"></div>
+                    <div class="slider-dot"></div>
+                    <div class="slider-dot"></div>
+                    <div class="slider-dot"></div>
+                    <div class="slider-dot"></div>
+                    <div class="slider-dot"></div>
+                    <div class="slider-dot"></div>
+                </div>
+            </div>
+        </div>
+        <div class="prices" id="prices">
+            <div class="price-list">
+                <h1>CENNIK</h1>
+                <h2>Strzyżenie włosów - 35zł</h2>
+                <h2>Strzyżenie + stylizacja - 50zł</h2>
+                <h2>Strzyżenie brody - 50zł</h2>
+                <h2>Strzyżeie brody + stylizacja - 65zł</h2>
+            </div>
+            <div class="price-image">
+                <img src="/images/barber.png" alt="Barber">
+            </div>
+        </div>
+        <div class="iframe">
+            <h1>LOKALIZACJA</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2452898.9757021246!2d16.058775164430184!3d53.10284550548228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471bb7866ab2064b%3A0xfbabb9508d23a4c0!2sFRYZJER%20M%C4%98SKI%20%22Majer%22Jacek%20Majchrzak!5e0!3m2!1spl!2spl!4v1744741549168!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <footer>
+            <p>Zakład Fryzjerski Majer</p>
+        </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
